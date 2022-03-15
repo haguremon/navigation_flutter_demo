@@ -16,7 +16,11 @@ class MyApp extends StatelessWidget {
       routes: {
       '/': (context) => Screen0(),
       '/screen1': (context) => Screen1(),
-      '/screen2': (context) => Screen2(),
+      '/screen2': (context) => Screen2(
+        hintText0: 'Screen0からの値わたし',
+        hintText1: 'Screen0からの値わたし',
+        buttonTitle: 'Screen 0',
+      ),//Screen2(hinText0,..),ここでも値渡しできそう
     } // Map<String, WidgetBuilder = Function(BuildContext context);>? // //複数の画面に遷移するときに便利
       );
   }
